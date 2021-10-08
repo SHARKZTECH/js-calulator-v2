@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+
+}
+section{
+    background-color: rgb(18,26,31);  
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.container{
+    width: 90%;
+    max-width: 400px;
+    background-color: rgb(39,55,59);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.display{
+    background-color: rgb(182,182,182);
+    height: 100px;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 30px;
+}
+.display-1{
+    opacity: .4;
+    font-size: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+.result{
+    position: relative;
+    bottom:0;
+    float: left;
+    font-size: 20px;
+    opacity: .4;  
+    color:rgb(46, 4, 4);  
+}
+
+.all_btn {
+    display: grid;
+    grid-template: repeat(4,1fr)/repeat(4,1fr);
+    color:white ;
+       
+  }
+.btn{
+    border: .5px solid rgba(92,92,92,0.137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color: rgb(49, 132, 165);
+}
+.equal{
+    grid-column: 3/5;
+}
+
+h1{
+	font-family: sans-serif;
+	text-align: center;
+	font-weight: 800;
+	color: transparent;
+	background:url(bg1.jpg);
+	background-position: center;
+	-webkit-background-clip:text;
+    -moz-background-clip:text;   
+	animation: animatedBack 2s ease infinite;
+}
+@keyframes animatedBack{
+	from{
+		background-position: 0 0;
+	}
+	to{
+	    background-position: 0 100%;
+	}
+}
